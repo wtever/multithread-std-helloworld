@@ -1,4 +1,5 @@
 #include <iostream>
+#include <thread>
 using namespace std;
 
 void someFunction()
@@ -9,5 +10,7 @@ void someFunction()
 int main()
 {
 	cout << "Hello from main" << endl;
+	std::thread t1(someFunction);
+	t1.join();
 	return 0;
 }
