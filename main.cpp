@@ -1,8 +1,13 @@
 #include <iostream>
 using namespace std;
 
+void someFunction()
+{
+	cout << "Hello from the thread" << endl;
+}
+
 int main()
 {
-	cout << "Hello from thread" << endl;
+	cout << "Hello from main" << endl;
 	return 0;
 }
